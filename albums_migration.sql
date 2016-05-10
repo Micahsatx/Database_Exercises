@@ -11,3 +11,6 @@ CREATE TABLE albums (
     genre VARCHAR(150),
     PRIMARY KEY (id)
 );
+
+ALTER TABLE albums
+ADD UNIQUE (artist_name, record_name);
